@@ -60,6 +60,23 @@
   align-items: center;
 }
 
+.search {
+  width: 100%;
+  height: 100px;
+  padding: 30px;
+}
+
+#search {
+  padding: 16px;
+  width: 230px;
+  height: 100%;
+  border-radius: 7px;
+  font-size: 14px;
+  border: none;
+  outline: none;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.1), 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
 .container .product {
   background: #ffffff;
   width: 960px;
