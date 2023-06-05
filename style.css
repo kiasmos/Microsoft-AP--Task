@@ -1,0 +1,151 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+}
+
+.loading-display {
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  place-items: center;
+}
+
+.lds-ring {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+
+.lds-ring div {
+  box-sizing: border-box;
+  display: block;
+  position: absolute;
+  width: 64px;
+  height: 64px;
+  margin: 8px;
+  border: 8px solid #aeadad;
+  border-radius: 50%;
+  animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  border-color: #aeadad transparent transparent transparent;
+}
+.lds-ring div:nth-child(1) {
+  animation-delay: -0.45s;
+}
+.lds-ring div:nth-child(2) {
+  animation-delay: -0.3s;
+}
+.lds-ring div:nth-child(3) {
+  animation-delay: -0.15s;
+}
+@keyframes lds-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container .product {
+  background: #ffffff;
+  width: 960px;
+  min-height: 200px;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.1), 0px 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+  margin: 20px 0 20px 0;
+  padding: 20px 0 20px 0;
+}
+.container .product .laptop-img {
+  width: 136px;
+  height: 136px;
+}
+.container .product .product-info {
+  width: 560px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  border-right: 1px solid #e8e8e8;
+  padding-right: 20px;
+}
+.container .product .product-info .product-name {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  color: #363636;
+}
+.container .product .product-info p {
+  margin: 15px 0 15px 0;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  color: #363636;
+}
+.container .product .product-info .about-more {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  color: #363636;
+  cursor: pointer;
+}
+.container .product .product-score {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 15px;
+}
+.container .product .product-score .point-score {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 29px;
+  text-align: center;
+  gap: 5px;
+  color: #1ab76c;
+}
+
+.container .product .product-score .score {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  text-align: center;
+  color: #696969;
+}
+
+.container .product .product-score .more-info {
+  background: #1ab76c;
+  border-radius: 38px;
+  width: 156px;
+  height: 40px;
+  color: #ffffff;
+  cursor: pointer;
+  border: none;
+}
+
+.container .product .product-score .compare-price {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  color: #363636;
+  cursor: pointer;
+}
